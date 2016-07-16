@@ -1,0 +1,58 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.appturbo.appturbotest.DetailActivity">
+    <include layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin">
+        <PreferenceScreen
+            android:imageView="@string/imageView_intent_preference"
+            android:Textview="@string/textview_intent_preference">
+            <intent android:action="android.intent.action.VIEW"
+                android:data="" />
+
+        </PreferenceScreen>
+        <Imageview
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="logo"/>
+        <Imageview
+            android:id="@+id/logo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="name"/>
+        <Listview
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="description"/>
+        <Listview
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+        /*
+        * TODO: Try to recreate the view shown by the DetailActivity Screenshot
+        * You need to have:
+        *   - An ImageView @id/logo
+        *   - A Textview @id/name
+        *   - A Textview @id/description
+        *   - An Imageview @id/screenshot
+        */
+    </LinearLayout>
+</LinearLayout>
